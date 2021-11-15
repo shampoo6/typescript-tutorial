@@ -68,17 +68,26 @@ let arr2: Array<string> = ['a', 'b', 'c']
 let arr3: string[] = ['x', 'y', 'z']
 
 // 定义函数
-// 参数列表的参数也能定义类型，返回值定义在参数列表的圆括号后面
-let fn: Function = (x: number, y: number): number => {
-    return x + y
+// 在变量fn后定义函数类型，圆括号为参数列表，箭头后的是返回值类型
+// 参数列表的参数和返回值也能定义类型
+let fn: (x: number, y: number) => number = (x: number, y: number) => {
+    return x - y
 }
+
 // 当函数没有返回值时，就使用 void
-let fn2: Function = function (): void {
-    console.log('this is a function');
+let fn2: () => void = () => {
+    console.log('this is a function')
+}
+
+// 返回联合类型
+// 返回值可以是几种可选类型的其中之一
+let fn3: (x: number | string, y: number | string) => number | string = (x, y) => {
+    return typeof x === 'number' && typeof y === 'number' ?
+        Number(x + y) : String(x) + String(y)
 }
 
 // 返回可选值
-// fn3 返回值必须是 1 2 3 中的一个
-let fn3: Function = (x, y): 1 | 2 | 3 => {
-    return 1
+// 返回值只能在给定结果中取值
+let fn4: () => 'male' | 'female' | 'other' = () => {
+    return 'female'
 }
