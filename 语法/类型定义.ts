@@ -91,3 +91,22 @@ let fn3: (x: number | string, y: number | string) => number | string = (x, y) =>
 let fn4: () => 'male' | 'female' | 'other' = () => {
     return 'female'
 }
+
+// 任意函数类型可以使用 Function
+// 以下fn5可以存放任意的函数
+let fn5: Function = () => { }
+
+
+// 参数可以使用 as 进行类型断言
+// 类型断言用于给 ts 提供他们不知道的类型信息
+// 若断言失败可能导致程序的运行错误
+// 例如：node.js 自带的变量 __filename 对于 ts 来说没有定义过 __filename 变量，所以需要告诉 ts __filename 是什么东西？
+declare const __filename
+console.log(__filename)
+console.log((__filename as string).length);
+// 注意：类型断言不是类型的强制转换，例如：
+let sToB: any = ''
+sToB = sToB as boolean
+console.log(sToB);
+
+
