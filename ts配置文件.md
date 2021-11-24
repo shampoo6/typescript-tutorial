@@ -6,3 +6,5 @@
 当成功配置了 `tsconfig.json` 后，就可以在项目根目录下运行 `tsc` 了，此时编译器会根据配置对项目进行编译
 
 官方也提供了一些可选的推荐配置：https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#tsconfig-bases
+
+也可以参考 `webpack` 的 `ts` 配置：https://webpack.js.org/guides/typescript/
