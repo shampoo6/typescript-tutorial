@@ -1,0 +1,6 @@
+export let msg: string = 'hello messge'
+export function sayMessage(words: string): string {
+    msg = words
+    console.log(msg);
+    return msg
+}

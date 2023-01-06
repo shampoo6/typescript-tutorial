@@ -1,6 +1,6 @@
 # TypeScript简介
 
-官网：https://www.typescriptlang.org/
+官网：<https://www.typescriptlang.org/>
 
 `TypeScript` 是微软推出的用于补全 `javascript` 的语言，是一款需要编译器的前端编程语言。
 

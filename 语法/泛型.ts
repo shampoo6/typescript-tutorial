@@ -1,4 +1,5 @@
 // 知识点
+// 参考: https://www.typescriptlang.org/docs/handbook/2/generics.html
 // 什么是泛型
 // 应用场景
 // 声明带泛型的类型

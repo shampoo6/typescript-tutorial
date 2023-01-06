@@ -1,3 +1,5 @@
+// 官网: <https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html>
+
 // 命名空间
 // 为了避免全局变量声明造成变量污染的问题，ts 引入了命名空间的概念，在不同命名空间中可以存在相同的变量名而不会互相干扰
 // 命名空间中可以书写任意的代码
