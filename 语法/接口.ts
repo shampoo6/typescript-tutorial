@@ -89,3 +89,7 @@ interface ICar { wheelCount: number }
 // 验证接口
 let iCar: ICar = { name: '小轿车', wheelCount: 4 }
 let iCar2: ICar2 = { name: '客车', wheelCount: 4, price: 1111 }
+
+// 还有一中情况使用 interface 而不是 type
+// 需要约束class类必须实现哪些内容，使用 interface 来进行约束
+// 而 type 单纯是定义类型时的别名
