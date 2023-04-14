@@ -22,6 +22,8 @@ module.exports = {
 {
   "compilerOptions": {
     ...
+    // 设置 paths 属性则必须设置 baseUrl
+    "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"
