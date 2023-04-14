@@ -12,8 +12,7 @@ module.exports = (env, params) => {
                 // 需要添加别名让 ts 检索 vue
                 'vue': 'vue/dist/vue.esm-bundler.js',
                 ...
-            },
-            fallback: {'path': require.resolve('path-browserify')}
+            }
         },
         module: {
             rules: [
